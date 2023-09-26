@@ -52,14 +52,47 @@ body{
     animation-iteration-count: 1;
 }
 
+main{
+    text-align: center;
+}
+
 .h4{
     font-family: 'Inclusive Sans', sans-serif;
     color: white;
     margin-top: 15px;
 }
 
-.dropdown{
-    margin-top: 15px;
+.dropd{
+    margin-top: 10px;
+    text-align:center;
+}
+
+.form-select{
+    width: 15%;
+    margin:auto;
+}
+
+.div2{
+    display: none;
+}
+
+.converter{
+    margin-top: 60px;
+}
+
+.input-group{
+    margin:auto;
+    margin-top: 50px;
+    width: 40%;
+}
+
+.input-group button{
+    color: white;
+    background-color: #2f4a6f;
+}
+
+.input-group button:hover{
+    background-color: #476fa8;
 }
 
 .footer{

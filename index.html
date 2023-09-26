@@ -13,27 +13,57 @@
 </head>
 <body>
     <div class="header">
-        <p class="h1 text-center p-2">Metric Magic<img src="/assets/icons/magic.svg" class="icon"></p>
+        <p class="h1 text-center p-2">Metric Magic<img src="/assets/icons/magic.png" class="icon"></p>
     </div>
     <div class="main">
         <p class="h4 text-center">Smart and Simple Unit Converter!!</p>
-        <div class="dropdown text-center">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Select Unit
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><h6 class="dropdown-header">Select Unit</h6></li>  
-              <li><button class="dropdown-item" type="button">Area</button></li>
-              <li><button class="dropdown-item" type="button">Digital Storage</button></li>
-              <li><button class="dropdown-item" type="button">Frequency</button></li>
-              <li><button class="dropdown-item" type="button">Length</button></li>
-              <li><button class="dropdown-item" type="button">Mass</button></li>
-              <li><button class="dropdown-item" type="button">Angle</button></li>
-              <li><button class="dropdown-item" type="button">Speed</button></li>
-              <li><button class="dropdown-item" type="button">Temperature</button></li>
-              <li><button class="dropdown-item" type="button">Time</button></li>
-              <li><button class="dropdown-item" type="button">Volume</button></li>
-            </ul>
+        <div class="dropd">
+          <select class="form-select form-select-sm" size="1" aria-label="unitselector" id="unse">
+            <option selected>Select Unit</option>
+            <option value="Area">Area</option>
+            <option value="Digital Storage">Digital Storage</option>
+            <option value="Frequency">Frequency</option>
+            <option value="Length">Length</option>
+            <option value="Mass">Mass</option>
+            <option value="Angle">Angle</option>
+            <option value="Speed">Speed</option>
+            <option value="Temperature">Temperature</option>
+            <option value="Time">Time</option>
+            <option value="Volume">Volume</option>
+          </select>
+        </div>
+        <div class="converter" id="conv">
+            <div class="input-group mb-2">
+              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="area">
+                <option value="Square Kilometer">Square Kilometer</option>
+                <option value="Square Meter">Square Meter</option>
+                <option value="Square Mile">Square Mile</option>
+                <option value="Square Foot">Square Foot</option>
+                <option value="Acre">Acre</option>
+              </select>
+              <!-- <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="digi">
+                <option value="Bit">Bit</option>
+                <option value="Byte">Byte</option>
+                <option value="Kilobyte(KB)">Kilobyte(KB)</option>
+                <option value="Megabyte(MB)">Megabyte(MB)</option>
+                <option value="Gigabyte(GB)">Gigabyte(GB)</option>
+                <option value="Terabyte(TB)">Terabyte(TB)</option>
+                <option value="Petabyte(PB)">Petabyte(PB)</option>
+              </select> -->
+              <input type="text" class="form-control" placeholder="Enter Value" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn" type="button" id="cnvrtbtn">Convert</button>
+            </div>
+            <div class="input-group mb-2">
+              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="area">
+                <option value="Square Kilometer">Square Kilometer</option>
+                <option value="Square Meter">Square Meter</option>
+                <option value="Square Mil">Square Mile</option>
+                <option value="Square Foot">Square Foot</option>
+                <option value="Acre">Acre</option>
+              </select>
+              <input type="text" class="form-control" placeholder="Converted Value" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn" type="button" id="cpybtn">Copy</button>
+            </div>
         </div>
     </div>
     <div class="footer text-center">
@@ -44,6 +74,7 @@
         <a href="https://www.instagram.com/captainyogs/" target="_blank" class="linkk"><img src="/assets/images/2111463.png" class="footer-img"></a>
       </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
