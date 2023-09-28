@@ -1,4 +1,4 @@
-console.log('JS is working!!\n\n');
+// console.log('JS is working!!\n\n');
 
 var mv=document.getElementById("unse");
 var cn=document.getElementById("conv");
@@ -536,4 +536,12 @@ cnvrtbtn.onclick=function myScript() {
             else document.getElementById("ans").value = val;
         }
     }
+}
+
+var cpybtn = document.getElementById("cpybtn");
+cpybtn.onclick = function(){   
+    var copyText = document.getElementById("ans");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
 }
