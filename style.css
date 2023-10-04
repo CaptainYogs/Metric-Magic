@@ -71,6 +71,17 @@ body{
     display: none;
 }
 
+#swpbtn{
+    width: 10%;
+    border-radius: 80%;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+#swpbtn:hover{
+    box-shadow: 1px 1px 5px #1d2d44,-1px -1px 5px #1d2d44;
+}
+
 .converter{
     margin-top: 5%;
     margin-left: 30%;
@@ -79,7 +90,8 @@ body{
 }
 
 .input-group{
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     width: auto;
 }
 

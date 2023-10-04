@@ -78,7 +78,7 @@ mv.onchange=function myScript() {
     }
 }
 
-cnvrtbtn.onclick=function myScript() {
+cnvrtbtn.onclick=function myScript1() {
     var mv=document.getElementById("unse");
     var val = document.getElementById("val").value;
     if(mv.value == "Area"){
@@ -544,4 +544,18 @@ cpybtn.onclick = function(){
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
+}
+
+var swpbtn = document.getElementById("swpbtn");
+swpbtn.onclick = function(){
+    var val = document.getElementById("val");
+    var cpybtn = document.getElementById("ans");
+    var act = Array.from(document.querySelectorAll('.div2')).filter(s =>
+        window.getComputedStyle(s).getPropertyValue('display') != 'none'
+     );
+    var a = act[0].value;
+    act[0].value = act[1].value;
+    act[1].value = a;
+    val.value=cpybtn.value;
+    cpybtn.value="";
 }
