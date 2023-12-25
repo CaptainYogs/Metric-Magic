@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <p class="h1 text-center p-2">Metric Magic<img src="assets/magic.png" class="icon"></p>
+    <div class="header text-center">
+        <p class="h1 p-2">Metric Magic<img src="assets/magic.png" class="icon"></p>
     </div>
-    <div class="main">
-        <p class="h4 text-center">Smart and Simple Unit Converter!!</p>
+    <div class="main text-center">
+        <p class="h4">Smart and Simple Unit Converter!!</p>
         <div class="dropd">
           <select class="form-select form-select-md" size="1" aria-label="unitselector" id="unse">
             <option selected>Select Unit</option>
@@ -33,165 +33,181 @@
             <option value="Volume">Volume</option>
           </select>
         </div>
-        <div class="converter text-center" id="conv">
-            <div class="input-group mb-2">
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="area">
-                <option value="Square Kilometer" selected>Square Kilometer</option>
-                <option value="Square Meter">Square Meter</option>
-                <option value="Square Mile">Square Mile</option>
-                <option value="Square Foot">Square Foot</option>
-                <option value="Acre">Acre</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="digi">
-                <option value="Bit">Bit</option>
-                <option value="Byte">Byte</option>
-                <option value="Kilobyte(KB)">Kilobyte(KB)</option>
-                <option value="Megabyte(MB)" selected>Megabyte(MB)</option>
-                <option value="Gigabyte(GB)">Gigabyte(GB)</option>
-                <option value="Terabyte(TB)">Terabyte(TB)</option>
-                <option value="Petabyte(PB)">Petabyte(PB)</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="freq">
-                <option value="Hertz" selected>Hertz</option>
-                <option value="Kilohertz">Kilohertz</option>
-                <option value="Megahertz">Megahertz</option>
-                <option value="Gigahertz">Gigahertz</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="leng">
-                <option value="Kilometre" selected>Kilometre</option>
-                <option value="Meter">Meter</option>
-                <option value="Centimeter">Centimeter</option>
-                <option value="Milimetre">Milimetre</option>
-                <option value="Nanometre">Nanometre</option>
-                <option value="Mile">Mile</option>
-                <option value="Yard">Yard</option>
-                <option value="Foot">Foot</option>
-                <option value="Inch">Inch</option>
-                <option value="Nautical Mile">Nautical Mile</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="mass">
-                <option value="Kilogram" selected>Kilogram</option>
-                <option value="Gram">Gram</option>
-                <option value="Milligram">Milligram</option>
-                <option value="Tonne">Tonne</option>
-                <option value="Pound">Pound</option>
-                <option value="Ounce">Ounce</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="degr">
-                <option value="Radian" selected>Radian</option>
-                <option value="Degree">Degree</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="sped">
-                <option value="Mile per Hour" selected>Mile per Hour</option>
-                <option value="Meter per Second">Meter per Second</option>
-                <option value="Kilometer per Hour">Kilometer per Hour</option>
-                <option value="Knot">Knot</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="temp">
-                <option value="Celsius" selected>Celsius</option>
-                <option value="Fahrenheit">Fahrenheit</option>
-                <option value="Kelvin">Kelvin</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="time">
-                <option value="Millisecond">Millisecond</option>
-                <option value="Second">Second</option>
-                <option value="Minute">Minute</option>
-                <option value="Hour" selected>Hour</option>
-                <option value="Day">Day</option>
-                <option value="Week">Week</option>
-                <option value="Month">Month</option>
-                <option value="Calendar Year">Calendar Year</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="volm">
-                <option value="Liter" selected>Liter</option>
-                <option value="Milliliter">Milliliter</option>
-              </select>
-              <input type="text" class="form-control" placeholder="Enter Value" aria-label="Recipient's username" aria-describedby="button-addon2" id="val">
-              <button class="btn" type="button" id="cnvrtbtn">Convert</button>
-            </div>
-            <button type="button" id="swpbtn"><img src="assets/swap.svg"></button>
-            <div class="input-group mb-2">
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="area">
-                <option value="Square Kilometer">Square Kilometer</option>
-                <option value="Square Meter">Square Meter</option>
-                <option value="Square Mile" selected>Square Mile</option>
-                <option value="Square Foot">Square Foot</option>
-                <option value="Acre">Acre</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="digi">
-                <option value="Bit">Bit</option>
-                <option value="Byte">Byte</option>
-                <option value="Kilobyte(KB)" selected>Kilobyte(KB)</option>
-                <option value="Megabyte(MB)">Megabyte(MB)</option>
-                <option value="Gigabyte(GB)">Gigabyte(GB)</option>
-                <option value="Terabyte(TB)">Terabyte(TB)</option>
-                <option value="Petabyte(PB)">Petabyte(PB)</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="freq">
-                <option value="Hertz">Hertz</option>
-                <option value="Kilohertz">Kilohertz</option>
-                <option value="Megahertz">Megahertz</option>
-                <option value="Gigahertz" selected>Gigahertz</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="leng">
-                <option value="Kilometre">Kilometre</option>
-                <option value="Meter">Meter</option>
-                <option value="Centimeter">Centimeter</option>
-                <option value="Milimetre">Milimetre</option>
-                <option value="Nanometre">Nanometre</option>
-                <option value="Mile" selected>Mile</option>
-                <option value="Yard">Yard</option>
-                <option value="Foot">Foot</option>
-                <option value="Inch">Inch</option>
-                <option value="Nautical Mile">Nautical Mile</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="mass">
-                <option value="Kilogram">Kilogram</option>
-                <option value="Gram">Gram</option>
-                <option value="Milligram">Milligram</option>
-                <option value="Tonne">Tonne</option>
-                <option value="Pound" selected>Pound</option>
-                <option value="Ounce">Ounce</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="degr">
-                <option value="Radian">Radian</option>
-                <option value="Degree" selected>Degree</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="sped">
-                <option value="Mile per Hour">Mile per Hour</option>
-                <option value="Meter per Second">Meter per Second</option>
-                <option value="Kilometer per Hour" selected>Kilometer per Hour</option>
-                <option value="Knot">Knot</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="temp">
-                <option value="Celsius">Celsius</option>
-                <option value="Fahrenheit" selected>Fahrenheit</option>
-                <option value="Kelvin">Kelvin</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="time">
-                <option value="Millisecond">Millisecond</option>
-                <option value="Second">Second</option>
-                <option value="Minute">Minute</option>
-                <option value="Hour">Hour</option>
-                <option value="Day" selected>Day</option>
-                <option value="Week">Week</option>
-                <option value="Month">Month</option>
-                <option value="Calendar Year">Calendar Year</option>
-              </select>
-              <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="volm">
-                <option value="Liter">Liter</option>
-                <option value="Milliliter" selected>Milliliter</option>
-              </select>
-              <input type="text" class="form-control" placeholder="Converted Value" aria-label="Recipient's username" aria-describedby="button-addon2" id="ans">
-              <button class="btn" type="button" id="cpybtn">Copy</button>
+        <div class="converter" id="conv">
+            <div class="container mb-2 conv-container">
+              <div class="row g-0 justify-content-center conv-row">
+                <div class="col-12 col-md-4 conv-col">
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="area">
+                    <option value="Square Kilometer" selected>Square Kilometer</option>
+                    <option value="Square Meter">Square Meter</option>
+                    <option value="Square Mile">Square Mile</option>
+                    <option value="Square Foot">Square Foot</option>
+                    <option value="Acre">Acre</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="digi">
+                    <option value="Bit">Bit</option>
+                    <option value="Byte">Byte</option>
+                    <option value="Kilobyte(KB)">Kilobyte(KB)</option>
+                    <option value="Megabyte(MB)" selected>Megabyte(MB)</option>
+                    <option value="Gigabyte(GB)">Gigabyte(GB)</option>
+                    <option value="Terabyte(TB)">Terabyte(TB)</option>
+                    <option value="Petabyte(PB)">Petabyte(PB)</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="freq">
+                    <option value="Hertz" selected>Hertz</option>
+                    <option value="Kilohertz">Kilohertz</option>
+                    <option value="Megahertz">Megahertz</option>
+                    <option value="Gigahertz">Gigahertz</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="leng">
+                    <option value="Kilometre" selected>Kilometre</option>
+                    <option value="Meter">Meter</option>
+                    <option value="Centimeter">Centimeter</option>
+                    <option value="Milimetre">Milimetre</option>
+                    <option value="Nanometre">Nanometre</option>
+                    <option value="Mile">Mile</option>
+                    <option value="Yard">Yard</option>
+                    <option value="Foot">Foot</option>
+                    <option value="Inch">Inch</option>
+                    <option value="Nautical Mile">Nautical Mile</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="mass">
+                    <option value="Kilogram" selected>Kilogram</option>
+                    <option value="Gram">Gram</option>
+                    <option value="Milligram">Milligram</option>
+                    <option value="Tonne">Tonne</option>
+                    <option value="Pound">Pound</option>
+                    <option value="Ounce">Ounce</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="degr">
+                    <option value="Radian" selected>Radian</option>
+                    <option value="Degree">Degree</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="sped">
+                    <option value="Mile per Hour" selected>Mile per Hour</option>
+                    <option value="Meter per Second">Meter per Second</option>
+                    <option value="Kilometer per Hour">Kilometer per Hour</option>
+                    <option value="Knot">Knot</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="temp">
+                    <option value="Celsius" selected>Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="time">
+                    <option value="Millisecond">Millisecond</option>
+                    <option value="Second">Second</option>
+                    <option value="Minute">Minute</option>
+                    <option value="Hour" selected>Hour</option>
+                    <option value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                    <option value="Calendar Year">Calendar Year</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="volm">
+                    <option value="Liter" selected>Liter</option>
+                    <option value="Milliliter">Milliliter</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-4 conv-col">
+                  <input type="text" class="form-control conv-inp" placeholder="Enter Value" aria-label="Recipient's username" aria-describedby="button-addon2" id="val">
+                </div>
+                <div class="col-12 col-md-4 conv-col">
+                  <button class="btn conv-btn" type="button" id="cnvrtbtn">Convert</button>
+                </div>
+              </div>
+              <div class="row g-0 justify-content-center conv-row">
+                <div class="col-12 conv-col conv-swp"><button type="button" id="swpbtn"><img src="assets/swap.svg" class="swp"></button></div>
+              </div>
+              <div class="row g-0 justify-content-center conv-row">
+                <div class="col-12 col-md-4 conv-col">
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="area">
+                    <option value="Square Kilometer">Square Kilometer</option>
+                    <option value="Square Meter">Square Meter</option>
+                    <option value="Square Mile" selected>Square Mile</option>
+                    <option value="Square Foot">Square Foot</option>
+                    <option value="Acre">Acre</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="digi">
+                    <option value="Bit">Bit</option>
+                    <option value="Byte">Byte</option>
+                    <option value="Kilobyte(KB)" selected>Kilobyte(KB)</option>
+                    <option value="Megabyte(MB)">Megabyte(MB)</option>
+                    <option value="Gigabyte(GB)">Gigabyte(GB)</option>
+                    <option value="Terabyte(TB)">Terabyte(TB)</option>
+                    <option value="Petabyte(PB)">Petabyte(PB)</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="freq">
+                    <option value="Hertz">Hertz</option>
+                    <option value="Kilohertz">Kilohertz</option>
+                    <option value="Megahertz">Megahertz</option>
+                    <option value="Gigahertz" selected>Gigahertz</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="leng">
+                    <option value="Kilometre">Kilometre</option>
+                    <option value="Meter">Meter</option>
+                    <option value="Centimeter">Centimeter</option>
+                    <option value="Milimetre">Milimetre</option>
+                    <option value="Nanometre">Nanometre</option>
+                    <option value="Mile" selected>Mile</option>
+                    <option value="Yard">Yard</option>
+                    <option value="Foot">Foot</option>
+                    <option value="Inch">Inch</option>
+                    <option value="Nautical Mile">Nautical Mile</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="mass">
+                    <option value="Kilogram">Kilogram</option>
+                    <option value="Gram">Gram</option>
+                    <option value="Milligram">Milligram</option>
+                    <option value="Tonne">Tonne</option>
+                    <option value="Pound" selected>Pound</option>
+                    <option value="Ounce">Ounce</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="degr">
+                    <option value="Radian">Radian</option>
+                    <option value="Degree" selected>Degree</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="sped">
+                    <option value="Mile per Hour">Mile per Hour</option>
+                    <option value="Meter per Second">Meter per Second</option>
+                    <option value="Kilometer per Hour" selected>Kilometer per Hour</option>
+                    <option value="Knot">Knot</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="temp">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit" selected>Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="time">
+                    <option value="Millisecond">Millisecond</option>
+                    <option value="Second">Second</option>
+                    <option value="Minute">Minute</option>
+                    <option value="Hour">Hour</option>
+                    <option value="Day" selected>Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                    <option value="Calendar Year">Calendar Year</option>
+                  </select>
+                  <select class="form-select form-select-md div2" size="1" aria-label="unitselector" id="volm">
+                    <option value="Liter">Liter</option>
+                    <option value="Milliliter" selected>Milliliter</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-4 conv-col">
+                  <input type="text" class="form-control conv-inp" placeholder="Converted Value" aria-label="Recipient's username" aria-describedby="button-addon2" id="ans">
+                </div>
+                <div class="col-12 col-md-4 conv-col">
+                  <button class="btn conv-btn" type="button" id="cpybtn">Copy</button>
+                </div>
+              </div>
             </div>
         </div>
     </div>
     <div class="footer text-center">
         <h5 class="footer-text">Yogesh Limbani</h5>
       <div class="links">
-        <a href="https://www.linkedin.com/in/yogesh120/" target="_blank" class="linkk"><img src="assets/images/Link.png" class="footer-img"></a>
-        <a href="https://github.com/CaptainYogs" target="_blank" class="linkk"><img src="assets/images/github.png" class="footer-img"></a>
+        <a href="https://www.linkedin.com/in/yogeshr6/" target="_blank" class="linkk"><img src="assets/images/Link.png" class="footer-img"></a>
+        <a href="https://github.com/YogeshR6" target="_blank" class="linkk"><img src="assets/images/github.png" class="footer-img"></a>
         <a href="https://www.instagram.com/captainyogs/" target="_blank" class="linkk"><img src="assets/images/2111463.png" class="footer-img"></a>
       </div>
     </div>
